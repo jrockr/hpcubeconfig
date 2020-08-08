@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    ports:
+      - '443:443'
+    volumes:
+      - ./config.json:/app/config/production.json
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+  db:
+    image: 'jc21/mariadb-aria:10.4'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'hpcube@2020'
+      MYSQL_DATABASE: 'hpcubeproxy'
+      MYSQL_USER: 'hpcubeproxyuser'
+      MYSQL_PASSWORD: 'hpcubeproxy@2020'
+    volumes:
+      - ./data/mysql:/var/lib/mysql
