@@ -1,0 +1,10 @@
+{
+  "database": {
+    "engine": "mysql",
+    "host": "db",
+    "name": "hpcubeproxy",
+    "user": "hpcubeproxyuser",
+    "password": "hpcubeproxy@2020",
+    "port": 3306
+  }
+}
