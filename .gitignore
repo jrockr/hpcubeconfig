@@ -1,0 +1,6 @@
+/terraform-hcloud/.terraform/*.*
+terraform-hcloud/.terraform/plugins/windows_amd64/CHANGELOG.md
+terraform-hcloud/.terraform/plugins/windows_amd64/LICENSE
+terraform-hcloud/.terraform/plugins/windows_amd64/lock.json
+terraform-hcloud/.terraform/plugins/windows_amd64/README.md
+terraform-hcloud/.terraform/plugins/windows_amd64/terraform-provider-hcloud_v1.19.2.exe
